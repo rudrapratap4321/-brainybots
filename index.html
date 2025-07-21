@@ -4,144 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BrainyBots Academy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f8ff;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(135deg, #007bff, #00c4ff);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.3rem;
-    }
-    section {
-      padding: 50px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      text-align: center;
-      color: #007bff;
-      margin-bottom: 30px;
-    }
-    .programs, .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .card h3 {
-      margin-bottom: 10px;
-      color: #444;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      background: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      margin-top: 15px;
-    }
-    .btn:hover {
-      background: #0056d2;
-    }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
+    body { scroll-behavior: smooth; }
   </style>
 </head>
-<body>
-  <!-- HEADER -->
-  <header>
-    <h1>🤖 BrainyBots Academy</h1>
-    <p>Future Tech for Future Minds – Coding & Robotics for Schools</p>
-    <a href="#contact" class="btn">Book a Demo</a>
-  </header>
+<body class="bg-gray-50 text-gray-800">
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p><strong>BrainyBots Academy</strong> makes coding, robotics, and AI simple & fun for middle and high school students. Our hands-on STEM kits and workshops help students build real projects like smart lights, obstacle-detecting robots, and AI chatbots while learning Scratch, Python, and basic AI.</p>
+  <!-- Hero Section -->
+  <section class="relative h-screen flex flex-col justify-center items-center text-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1603354350317-6f7aaa5911d4?auto=format&fit=crop&w=1950&q=80');">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="relative z-10 p-6">
+      <img src="logo.png" alt="BrainyBots Logo" class="mx-auto w-32 mb-4">
+      <h1 class="text-4xl md:text-6xl font-bold text-white" data-aos="fade-up">Welcome to BrainyBots Academy</h1>
+      <p class="text-lg text-gray-200 mt-4" data-aos="fade-up" data-aos-delay="200">Learn Scratch, Python & AI with fun interactive modules</p>
+      <a href="https://wa.me/919321830156" class="mt-6 inline-block bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-600" data-aos="fade-up" data-aos-delay="400">Book a Free Demo</a>
+    </div>
   </section>
 
-  <!-- PROGRAMS -->
-  <section id="programs">
-    <h2>Our Programs</h2>
-    <div class="programs">
-      <div class="card">
-        <h3>🔌 BrainyBots Starter Kit</h3>
-        <p>Arduino + sensors + step-by-step coding lessons with Scratch & Python.</p>
-        <p><strong>Price:</strong> ₹1,999</p>
-      </div>
-      <div class="card">
-        <h3>👨‍🏫 School Workshops</h3>
-        <p>1-day or 1-week workshops to introduce students to coding & robotics.</p>
-        <p><strong>Price:</strong> ₹200-500 per student</p>
-      </div>
-      <div class="card">
-        <h3>🌐 Teacher Training</h3>
-        <p>Empowering teachers with STEM teaching kits & curriculum.</p>
-        <p><strong>School Package:</strong> ₹30,000</p>
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6 bg-white" data-aos="fade-right">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">About BrainyBots</h2>
+      <p class="text-lg text-gray-600">BrainyBots Academy is on a mission to make coding fun and easy for kids. From Scratch to Python to AI basics, we help students build logic, creativity, and problem-solving skills through interactive learning modules and real hardware projects.</p>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="py-16 bg-gray-100" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">Our Programs</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg" data-aos="zoom-in">
+          <h3 class="text-xl font-semibold mb-2">Scratch Coding</h3>
+          <p class="text-gray-600">Visual programming for kids to build games, animations, and stories.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg" data-aos="zoom-in" data-aos-delay="150">
+          <h3 class="text-xl font-semibold mb-2">Python Basics</h3>
+          <p class="text-gray-600">Learn real coding with Python in a simple and fun way.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg" data-aos="zoom-in" data-aos-delay="300">
+          <h3 class="text-xl font-semibold mb-2">AI for Kids</h3>
+          <p class="text-gray-600">Understand Artificial Intelligence concepts with interactive examples.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Sample Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>🔦 Smart Light</h3>
-        <p>Light that turns on in the dark using an LDR sensor.</p>
-      </div>
-      <div class="card">
-        <h3>🚗 Obstacle Detector</h3>
-        <p>Ultrasonic sensor robot that avoids obstacles.</p>
-      </div>
-      <div class="card">
-        <h3>🔋 Scratch-Controlled LED</h3>
-        <p>Control Arduino LEDs with Scratch coding blocks.</p>
-      </div>
-      <div class="card">
-        <h3>🤖 AI Chatbot</h3>
-        <p>Simple Python chatbot that answers basic questions.</p>
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-6 bg-white" data-aos="fade-left">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+      <p class="text-gray-600 mb-6">Have questions or want a demo? Fill the form below and we’ll get back to you!</p>
+      <form action="https://formspree.io/f/mzzbzkya" method="POST" class="space-y-4 max-w-md mx-auto">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded">
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded">
+        <textarea name="message" placeholder="Your Message" class="w-full p-3 border rounded"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Send Message</button>
+      </form>
+      <div class="mt-6 flex justify-center space-x-4">
+        <a href="https://wa.me/919321830156" class="bg-green-500 text-white px-4 py-2 rounded">WhatsApp</a>
+        <a href="mailto:rudraprataptiwari1234@gmail.com" class="bg-red-500 text-white px-4 py-2 rounded">Email Us</a>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Want a demo for your school? Reach out now!</p>
-    <p>📞 <strong>Phone/WhatsApp:</strong> +91 98765 43210</p>
-    <p>📧 <strong>Email:</strong> info@brainybots.in</p>
-    <a href="https://wa.me/919876543210" class="btn">Chat on WhatsApp</a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 BrainyBots Academy | Learn • Build • Innovate</p>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 text-center py-6">
+    <p>&copy; 2025 BrainyBots Academy. All Rights Reserved.</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
